@@ -6,6 +6,10 @@ This system implements an Astronomy shop in a set of microservices in different 
 - **Running it locally**: [instructions](https://github.com/open-telemetry/opentelemetry-demo/blob/main/docs/docker_deployment.md#run-docker-compose)
 - **Running on Kubernetes**: [instructions](https://github.com/open-telemetry/opentelemetry-demo/blob/main/docs/kubernetes_deployment.md)
 
+## Running with Tracetest
+
+TODO
+
 ## Use cases
 
 - [Add item into shopping cart](./use-cases/add-item-into-shopping-cart.md): simulate a user choosing an item and adding it to the shopping cart
