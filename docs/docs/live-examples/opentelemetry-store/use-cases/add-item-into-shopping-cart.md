@@ -41,12 +41,12 @@ Using Tracetest, we can [create a test](../../../web-ui/creating-tests.md) that 
 
 ### Traces
 
-Running these tests for the first time will create an Observability trace like the image above, where you can see spans for the API call, validation (an API internal operation), and database calls:
+Running these tests for the first time will create an Observability trace like the image above, where you can see spans for the API call, and database calls:
 ![](../images/add-item-into-shopping-cart-trace.png)
 
 ### Assertions
 
-With this trace, now we can build [assertions](../../../concepts/assertions.md) on Tracetest and validate the API response and the database latency:
+With this trace, now we can build [assertions](../../../concepts/assertions.md) on Tracetest and validate two properties:
 
 - **The correct ProductID was sent to the Product Catalog API.**
 ![](../images/add-item-into-shopping-cart-api-test-spec.png)
@@ -63,6 +63,8 @@ If you want to replicate this entire test on Tracetest see by yourself, you can 
 ```sh
 tracetest test -d test-definition.yml --wait-for-results
 ```
+
+We are assuming that the Frontend service is exposed on `http://otel-demo-frontend:8080`:
 
 ```yaml
 type: Test
