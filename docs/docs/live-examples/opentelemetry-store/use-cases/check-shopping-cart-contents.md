@@ -9,7 +9,7 @@ And see all products that I've added to it
 So I can go to the checkout process
 ```
 
-You can trigger this use case by calling the endpoint `GET /api/cart?sessionId={some-uuid}&currecyCode=`. It should return a payload similar to this:
+You can trigger this use case by calling the endpoint `GET /api/cart?sessionId={some-uuid}&currecyCode=` from the Frontend service. It should return a payload similar to this:
 ```json
 {
   "userId": "8c0465e2-32bb-4ecb-a9c8-5a2861629ff1",
@@ -67,15 +67,16 @@ If you want to replicate this entire test on Tracetest see by yourself, you can 
 tracetest test -d test-definition.yml --wait-for-results
 ```
 
+We are assuming that the Frontend service is exposed on `http://otel-demo-frontend:8080`:
+
 ```yaml
 type: Test
 spec:
-  id: 1JnDAc04g
   name: OpenTelemetry Store - Check shopping cart contents
   trigger:
     type: http
     httpRequest:
-      url: http://otel-demo-v2.tracetest.io/api/cart?sessionId=8c0465e2-32bb-4ecb-a9c8-5a2861629ff1&currencyCode=
+      url: http://otel-demo-frontend:8080/api/cart?sessionId=8c0465e2-32bb-4ecb-a9c8-5a2861629ff1&currencyCode=
       method: GET
       headers:
       - key: Content-Type
