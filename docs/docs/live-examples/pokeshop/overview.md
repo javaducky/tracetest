@@ -10,10 +10,6 @@ With this, users can get familiar with the Tracetest tool by focusing on creatin
 - **Running it locally**: [instructions](https://github.com/kubeshop/pokeshop/blob/master/docs/installing.md#run-it-locally)
 - **Running on Kubernetes**: [instructions](https://github.com/kubeshop/pokeshop/blob/master/docs/installing.md#run-on-a-kubernetes-cluster)
 
-## Running with Tracetest
-
-TODO
-
 ## Use Cases
 
 We have three use cases that use each component of this structure and that can be observed via Open Telemetry and tested with Tracetest. Each one is triggered by an API call to their respective endpoint:
