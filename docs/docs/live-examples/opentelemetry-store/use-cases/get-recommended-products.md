@@ -43,7 +43,7 @@ Running these tests for the first time will create an Observability trace like t
 
 ### Assertions
 
-With this trace, now we can build [assertions](../../../concepts/assertions.md) on Tracetest and validate the API response and the database latency:
+With this trace, now we can build [assertions](../../../concepts/assertions.md) on Tracetest and validate the properties:
 
 - **It should have 4 products on this list.**
 ![](../images/get-recommended-products-get-product-test-spec.png)

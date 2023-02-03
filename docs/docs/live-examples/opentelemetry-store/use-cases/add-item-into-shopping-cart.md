@@ -46,7 +46,7 @@ Running these tests for the first time will create an Observability trace like t
 
 ### Assertions
 
-With this trace, now we can build [assertions](../../../concepts/assertions.md) on Tracetest and validate two properties:
+With this trace, now we can build [assertions](../../../concepts/assertions.md) on Tracetest and validate the properties:
 
 - **The correct ProductID was sent to the Product Catalog API.**
 ![](../images/add-item-into-shopping-cart-api-test-spec.png)
