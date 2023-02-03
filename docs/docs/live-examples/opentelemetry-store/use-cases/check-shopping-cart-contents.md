@@ -36,6 +36,8 @@ You can trigger this use case by calling the endpoint `GET /api/cart?sessionId={
 }
 ```
 
+If it is the first time that you are calling this endpoint, to see an item into the shopping cart you need first to [Add item into shopping cart](./add-item-into-shopping-cart.md).
+
 ## Building a Test for This Scenario
 
 Using Tracetest, we can [create a test](../../../web-ui/creating-tests.md) that will execute an API call on `GET /api/cart?sessionId={some-uuid}&currecyCode=` and validate the following properties:
@@ -44,7 +46,7 @@ Using Tracetest, we can [create a test](../../../web-ui/creating-tests.md) that 
 
 ### Traces
 
-Running these tests for the first time will create an Observability trace like the image above, where you can see spans for the API call, and database calls:
+Running these tests for the first time will create an Observability trace like the image above, where you can see spans for the API calls (HTTP and gRPC):
 ![](../images/check-shopping-cart-contents-trace.png)
 
 ### Assertions

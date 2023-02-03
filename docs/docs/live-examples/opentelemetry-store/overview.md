@@ -13,8 +13,8 @@ TODO
 ## Use cases
 
 - [Add item into shopping cart](./use-cases/add-item-into-shopping-cart.md): simulate a user choosing an item and adding it to the shopping cart
-- [Checkout](./use-cases/checkout.md): simulates a user choosing a product and later doing a checkout of that product, with billing and shipping info
 - [Check shopping cart content](./use-cases/check-shopping-cart-contents.md): simulate a user choosing different products and checking the shopping cart later 
+- [Checkout](./use-cases/checkout.md): simulates a user choosing a product and later doing a checkout of that product, with billing and shipping info
 - [Get recommended products](./use-cases/get-recommended-products.md): simulates a user querying for recommended products
 
 ## System architecture

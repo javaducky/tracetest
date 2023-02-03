@@ -53,6 +53,8 @@ It should return a payload similar to this:
 }
 ```
 
+If it is the first time that you are calling this endpoint, to see an item into the shopping cart you need first to [Add item into shopping cart](./add-item-into-shopping-cart.md).
+
 ## Building a Test for This Scenario
 
 Using Tracetest, we can [create a test](../../../web-ui/creating-tests.md) that will execute an API call on `POST /api/cart` and validate the following properties:
@@ -63,7 +65,7 @@ Using Tracetest, we can [create a test](../../../web-ui/creating-tests.md) that 
 
 ### Traces
 
-Running these tests for the first time will create an Observability trace like the image above, where you can see spans for the API call, and database calls:
+Running these tests for the first time will create an Observability trace like the image above, where you can see spans for the API calls (HTTP and gRPC), and database calls:
 ![](../images/checkout-trace.png)
 
 ### Assertions

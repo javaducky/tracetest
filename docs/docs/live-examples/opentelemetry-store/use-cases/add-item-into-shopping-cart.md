@@ -35,13 +35,13 @@ It should return a payload similar to this:
 
 ## Building a Test for This Scenario
 
-Using Tracetest, we can [create a test](../../../web-ui/creating-tests.md) that will execute an API call on `POST /api/cart` and validate two properties:
+Using Tracetest, we can [create a test](../../../web-ui/creating-tests.md) that will execute an API call on `POST /api/cart` and validate the following properties:
 - The correct ProductID was sent to the Product Catalog API.
 - The product persisted correctly on the shopping cart.
 
 ### Traces
 
-Running these tests for the first time will create an Observability trace like the image above, where you can see spans for the API call, and database calls:
+Running these tests for the first time will create an Observability trace like the image above, where you can see spans for the API calls (HTTP and gRPC), and database calls:
 ![](../images/add-item-into-shopping-cart-trace.png)
 
 ### Assertions
